@@ -14,7 +14,7 @@ case class Circle(radius: Double) {
 
 sealed trait Shape
 case class Rectangle(width: Double, height: Double) extends Shape
-case class Circle(radius: Double) extends Shape
+case class Circle2(radius: Double) extends Shape
 
 val shapeArea = (someShape: Shape) => {
   someShape match {
@@ -24,7 +24,7 @@ val shapeArea = (someShape: Shape) => {
 
 val shapeArea2 = (someShape: Shape) => {
   someShape match {
-    case circle: Circle => s"This is a circle with radius ${circle.radius}"
+    case circle: Circle2 => s"This is a circle with radius ${circle.radius}"
     case _ => "This is not a circle"
   }
 }

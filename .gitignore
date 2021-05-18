@@ -17,7 +17,10 @@
 # vscode and metals plugin
 .vscode/**/*
 .metals/**/*
-
+.bloop/**/*
+project/.bloop/
+project/metals.sbt
+project/project
 
 # Generated files
 .idea/**/contentModel.xml
